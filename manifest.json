@@ -1,0 +1,48 @@
+{
+  "name": "Cute Frogs",
+  "description": "New tab photo is a cute frog made by @dric",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting", "*://*instagram.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/get_started16.png",
+    "32": "/images/get_started32.png",
+    "48": "/images/get_started48.png",
+    "128": "/images/get_started128.png"
+  },
+  "options_page": "options.html"
+}
+
+
+   
+// {
+// 	"manifest_version": 2,
+//   	"name": "Simple Blank Tab",
+//     "description": "Blank Tab with informations",
+//     "version": "0.0.0.1",
+//     "permissions" : [
+//     		"bookmarks",
+//         "storage",
+//         "sessions",
+//         "tabs",
+//         "chrome://favicon/"],
+//     "chrome_url_overrides" : {
+//         "newtab": "newpage.html"
+//     },
+//     	"background": {
+// 		"scripts":["background.js"],
+// 		"persistent": false
+// 	}
+//  }
